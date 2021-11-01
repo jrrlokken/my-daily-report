@@ -15,10 +15,10 @@ jobs:
   report:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v2
-      -uses: actions/setup-node@v1
-       with: 
-        node-version: 12
-        
-      -run: yarn install --frozen-lockfile
-      -run: node src/main.js
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - run: yarn install --frozen-lockfile
+      - run: node src/main.js
